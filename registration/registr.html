@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../basick/basick.css">
+  <link rel="stylesheet" href="./reg.css">
+  <link rel="shortcut icon" href="../image/icon/sosika.svg" type="image/x-icon">
+  <title>Vkusno & Samsa</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__box">
+        <a class="icon" href="../home/home.html">
+          <div class="logo">V&
+            <img class="logo__icon" src="../image/icon/sosika.svg" alt="sosiska">
+          </div>
+        </a>
+        
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li>
+              <a class="header__li" href="../home/home.html#content">order</a>
+            </li>
+            <li>
+              <a class="header__li" href="../about/about.html">about us</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__themes">
+              <img title="Change theme to dark" class="moon icon" src="../image/icon/moon.svg" alt="moon">
+              <img title="Change theme to light" class="sun icon" src="../image/icon/sun.svg" alt="sun">
+            </li>
+            <a title="registr or log in" href="../registration/registr.html">
+              <li class="header__li">
+                <img class="icon user-icon" src="../image/icon/user.svg" alt="user">
+              </li>
+            </a>
+            <li title="exit of admin mode" class="header__li icon" id="log_out">
+              <img src="../image/icon/log out.svg" alt="log_out">
+            </li>
+          </ul>
+        </nav>
+        
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="reg">
+      <div class="container">
+        <form class="reg__form">
+          <h1 class="title shadow">registration</h1>
+          <label for="username" class="subtitle_24 blue">Username</label>
+          <input type="text" placeholder="Name" id="username_registration" class="input">
+        
+          <label for="password" class="subtitle_24 blue">Password</label>
+          <input type="password" placeholder="Password" id="password_registration" class="input">
+          <div id="btn_registration" class="reg__btn_box">
+            <button type="submit" class="btn">Sign In</button>
+            <a class="btn" onclick="onclik_log_in" href="../registration/log-in.html">to back</a> 
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class='container'>
+        <div class='footer__box'>
+            <div class='footer__text_box'>
+              <a class="icon footer__logo" href="#">
+                <div class="logo">Vkysno & samsa
+                  <img class="logo__icon" src="../image/icon/sosika.svg" alt="sosiska">
+                </div>
+              </a>
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.783968618853!2d74.58994651553573!3d42.87740367915551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8201bd00001%3A0xa9ccb5221e5451c5!2z0JrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyAiQ29kaWZ5IExhYiI!5e0!3m2!1sru!2skg!4v1678292327259!5m2!1sru!2skg"></iframe>
+            </div>
+            <div class='footer__text_box'>
+                <h6 class='footer_title'>
+                    For clients
+                </h6>
+                <ul class='footer__ul'>
+                  <a href='../about/about.html'>
+                    <li class='footer__li'>
+                      About Us
+                    </li>
+                  </a>
+                  <a href="../privacy/privacy.html">
+                    <li class="footer__li">
+                      Privacy Policy
+                    </li>
+                  </a>
+                </ul>
+            </div>
+            <div class='footer__text_box'>
+                <h6 class='footer_title'>
+                    Contacts
+                </h6>
+                <ul class='footer__ul'>
+                    <a href="tel:+996500431430">
+                      <li class='footer__li'>
+                        +996 500 431 430
+                      </li>
+                    </a>
+                    <a href="tel:+996500431430">
+                      <li class='footer__li'>
+                        +996 500 431 430
+                      </li>
+                    </a>
+                    <a href="mailto:info@codifylab.com">
+                      <li class='footer__li'>
+                        info@codifylab.com
+                      </li>
+                    </a>
+                </ul>
+            </div>
+            <div class='footer__text_box'>
+                <ul class='footer__ul footer-icon-box'>
+                    <span>
+                        <a href="*">
+                            <img class="footer__icons" src="" alt="instagram"/>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="*">
+                            <img class="footer__icons" src="" alt="Vkontakte"/>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="*">
+                            <img class="footer__icons" src="" alt="Twitter"/>    
+                        </a>
+                    </span>
+                    <span>
+                        <a href="*">
+                            <img class="footer__icons" src="" alt="Telegram"/>
+                        </a>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="../basick/basick.js"></script>
+  <script src="./registration.js"></script>
+</body>
+</html>

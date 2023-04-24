@@ -1,0 +1,26 @@
+.about{
+    width: 100%;
+    padding: calc(60px + 160 * (100vw / 1440)) 0 160px;
+}
+.about__box {
+    display: flex;
+    flex-direction: column;
+    list-style-type: decimal-leading-zero;
+    row-gap: 30px;
+}
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.about__title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: calc(10px + 30 * (100vw / 1440));
+  font-weight: bolder;
+  color: #fff;
+}
+.about__subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: calc(10px + 6 * (100vw / 1440));
+  color: #fff;
+}

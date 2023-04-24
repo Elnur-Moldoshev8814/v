@@ -1,0 +1,238 @@
+/* home */
+
+.home{
+  padding: calc(120px + 130 * (100vw / 1440)) 0 160px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../image/other/samsa_back.jpg');
+}
+.home__wrapper{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.home__box{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.home__text{
+  display: flex;
+  flex-direction: column;
+  width: calc(40px + 500 * (100vw / 1560));
+  row-gap: 10px;
+}
+
+/* slider */
+
+.slider {
+  position: relative;
+  width: calc(80px + 470 * (100vw / 1560));
+  height: auto;
+  background: radial-gradient(circle at center, white 0, gray, gray 100%);
+  animation: img-animation 1s ease-in-out infinite alternate;
+  backdrop-filter: blur(12px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.slider__slides {
+  display: flex;
+}
+.slider__slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+}
+.slider__slide img {
+  width: 100%;
+  height: auto;
+}
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+}
+.nav-button:hover{
+  background: rgba(0, 0, 0, 0.5);
+}
+#nav-button--prev {
+  left: 0;
+}
+#nav-button--next {
+  right: 0;
+}
+
+/* cooperate */
+
+.cooperate{
+  width: 100%;
+  animation: cooperate-shadow 2s ease-in-out infinite alternate;
+}
+@keyframes cooperate-shadow {
+  0% {
+    box-shadow: 0px 15px 5px -9px rgba(34, 60, 80, .1);
+  }
+  100% {
+    box-shadow: 0px 15px 13px -9px rgba(34, 60, 80, 0.3);
+  }
+}
+.cooperate__wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 25px;
+}
+.cooperate__boxs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 3px;
+}
+.cooperate__package{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.cooperate__img{
+  width: calc(30px + 40 * (100vw / 1440));
+  height: auto;
+  animation: coo-img-animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes coo-img-animation {
+  0% {
+    filter: drop-shadow(0 0 10px rgba(120, 80, 0, 0.6));
+  }
+  100% {
+    filter: drop-shadow(10px 0 30px rgba(130, 25, 0, 0.6));
+  }
+}
+
+/* content */
+
+.content{
+  width: 100%;
+}
+.content__wrapper_box{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.content__wrapper{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.content__box{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+
+  width: 260px;
+  padding: 3px;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.content_text{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.content_title{
+  color: #54B002;
+  font-size: calc(16px + 8 * (100vw / 1440));
+  font-weight: 600;
+}
+.content__price{
+  color: darkgoldenrod;
+}
+.content__btn__box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.content__box_input{
+  row-gap: 20px;
+}
+.content_text_input{
+  row-gap: 10px;
+}
+.input__price::-webkit-outer-spin-button,
+.input__price::-webkit-inner-spin-button {
+	display: none;
+}
+.content__btn__clear{
+  background: hsl(0, 87%, 34%);
+}
+.content__btn__clear:hover{
+  cursor: pointer;
+  color: hsl(0, 87%, 34%);
+  background: white;
+  animation: btn-animation-red .6s ease-in-out infinite alternate;
+}
+@keyframes btn-animation-red {
+  0% {
+    box-shadow: 0 0 1px hsl(0, 87%, 34%), 0 0 3px hsl(0, 87%, 34%), 0 0 15px hsl(0, 87%, 34%), 0 0 50px hsl(0, 87%, 34%);
+  }
+  100% {
+    box-shadow: 0 0 10px hsl(0, 87%, 34%), 0 0 30px hsl(0, 87%, 34%), 0 0 75px hsl(0, 87%, 34%), 0 0 125px hsl(0, 87%, 34%);
+  }
+}
+
+/* 583 */
+
+@media (width < 582px) {
+  .content__box{
+    width: 100%;
+  }
+}
+
+/* 500 */
+
+@media (width < 500px) {
+  .slider{
+    width: 100%;
+  }
+  .home__wrapper{
+    justify-content: center;
+  }
+  .home__box{
+    align-items: center;
+    width: 100%;
+  }
+  .home__text{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 260 */
+
+@media (width <= 260px) {
+  .btn{
+    width: 100%;
+  }
+}
